@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     if frq_dice[1] == 3: # 빈도수가 3이라면
         print(10000 + frq_dice[0]*1000)
-    elif frq_dice[1] == 2: # 빈도수가 1이라면
+    elif frq_dice[1] == 2: # 빈도수가 2라면
         print(1000 + frq_dice[0]*100)
     else:
         print(frq_dice[0]*100)
