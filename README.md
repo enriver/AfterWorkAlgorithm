@@ -1,2 +1,2 @@
-# Algorithm_2022
+# After Work Algorithm
 퇴근 후 알고리즘....
