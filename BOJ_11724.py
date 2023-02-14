@@ -12,7 +12,7 @@ def bfs(graph,visit,x):
 
         # 연결되어 있는 정점중에
         for v in graph[k]: # 체크하지 않았으며, 또 다른 정점과 연결되어 있는 경우
-            if not visit[v] and v in graph.keys():
+            if not visit[v]:
                 visit[v]=True
                 que.append(v)
 
@@ -40,10 +40,7 @@ if __name__=="__main__":
     for i in range(1,N+1):
         if not visit[i] :
             visit[i]=True
-            if i in graph.keys():
-                cnt+=bfs(graph,visit,i)
-            else: # 연결되어 있는 정점이 없다면 단독 정점이므로 cnt+=1
-                cnt+=1
+            cnt+=bfs(graph,visit,i)
 
     print(cnt)
     
