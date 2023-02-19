@@ -15,9 +15,9 @@ def solve(tree,N):
     while que:
         node = que.popleft()
 
-        for n in tree[node]:
-            if parents[n]==0 and n!=1:
-                parents[n]=node
+        for n in tree[node]: # 해당 노드의 value를 조회
+            if parents[n]==0 and n!=1: # value 값이 1이 아니면서, 방문한 적이 없다면
+                parents[n]=node # 해당 value의 부모를 key값으로 정의
                 que.append(n)
 
     for i in range(2,N+1):
